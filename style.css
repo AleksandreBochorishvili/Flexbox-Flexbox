@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.together {
+  display: flex;
+  gap: 12%;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+h2 {
+  width: 756;
+  height: 78;
+  top: 151px;
+  left: 100px;
+  opacity: 1;
+  font-family: BPG Nino Mtavruli;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.village {
+  color: #343a40;
+  width: 756;
+  height: 115;
+  top: 259px;
+  left: 100px;
+  opacity: 1;
+  font-family: BPG Ingiri Arial;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.logo {
+  display: flex;
+  width: 30%;
+}
+h1 {
+  width: 289;
+  height: 40;
+  top: 616px;
+  left: 952px;
+  opacity: 1;
+}
+button {
+  color: #ffffff;
+  background-color: #00ab89;
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #00ab89;
+  border-radius: 35px;
+  font-family: BPG Nino Mtavruli;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.sign_In {
+  display: flex;
+  align-self: center;
+  width: 272px;
+  height: 58px;
+}
+.telemedicine {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#electric-farm {
+  width: 388px;
+  height: 278px;
+  top: 586px;
+  left: 100px;
+  border-radius: 10px;
+}
+.telagri {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+#telagri-png {
+  width: 50%;
+  height: 382px;
+  top: 586px;
+  left: 526px;
+  border-radius: 10px;
+}
+.telegri-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
