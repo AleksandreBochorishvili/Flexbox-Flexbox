@@ -13,7 +13,7 @@
   /* background-color: blanchedalmond; */
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 157px;
 }
 .header {
   display: flex;
@@ -29,7 +29,6 @@
   width: 410px;
   height: 78px;
   font-family: BPG Nino Mtavruli;
-  font-weight: 700;
   font-style: Bold;
   font-size: 34px;
   line-height: 100%;
@@ -37,7 +36,7 @@
 }
 #village-text {
   color: #343a40;
-  width: 756px;
+  width: 88%;
   height: 115px;
   font-weight: 400px;
   font-size: 19px;
