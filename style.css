@@ -13,7 +13,6 @@
   /* background-color: blanchedalmond; */
   display: flex;
   justify-content: space-between;
-  gap: 157px;
 }
 .header {
   display: flex;
