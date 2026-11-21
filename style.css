@@ -3,104 +3,286 @@
   margin: 0;
   box-sizing: border-box;
 }
-.together {
-  /* background-color: rgb(206, 205, 205); */
-  max-width: 1440px; 
+
+html {
+  font-size: clamp(16px, 0.85vw, 32px);
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1235px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+main.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
   padding-top: 41px;
 }
+
 .container-one {
-  /* background-color: blanchedalmond; */
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 32px;
 }
+
 .header {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  width: 40%;
+  align-items: stretch;
+  gap: 0;
+  max-width: 756px;
+  width: 100%;
 }
-#logo {
+.header img {
+  margin-bottom: 57px;
+}
+.header h1 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+  max-width: 456px;
+  color: #343a40;
+  margin-bottom: 30px;
+}
+.header p {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.45;
+  max-width: 756px;
+  color: #343a40;
+  margin-bottom: 54px;
+}
+.header button {
+  width: 204px;
+  height: 48px;
+  border: none;
+  border-radius: 35px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #00ab89;
+  cursor: pointer;
+}
+
+.sign_up {
   display: flex;
-  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-#header-text {
-  width: 410px;
-  height: 78px;
-  font-family: BPG Nino Mtavruli;
-  font-style: Bold;
+.sign_up img {
+  max-width: 100%;
+  height: auto;
+}
+.sign_up button {
+  width: 287px;
+  height: 48px;
+  border: none;
+  border-radius: 35px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: #00ab89;
+  cursor: pointer;
+}
+
+.container-two {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+.container-two .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.container-two h2 {
+  max-width: 388px;
+  border-radius: 10px;
+  color: #00ab89;
+}
+
+.telagri {
+  display: flex;
+  gap: 38px;
+}
+.telagri div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 35px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.telagri div h1 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-weight: 700;
   font-size: 34px;
   line-height: 100%;
   letter-spacing: 0%;
 }
-#village-text {
-  color: #343a40;
-  width: 88%;
-  height: 115px;
-  font-weight: 400px;
-  font-size: 19px;
-  font-family: BPG Ingiri Arial;
-  line-height: 100%;
-}
-.sign_up {
-  display: flex;
-  flex-direction: column;
-}
-button {
-  color: #ffffff;
-  background-color: #00ab89;
-  border: 1px solid #00ab89;
-  width: 194px;
-  font-size: 20px;
-  font-family: BPG Nino Mtavruli;
-  padding: 10px 20px;
-  border-radius: 35px;
-}
-.sign_In {
-  width: 289px;
-}
-.container-two {
-  display: flex;
-  justify-content: space-between;
-}
-#electric-farm {
-  width: 388px;
-  height: 278px;
-}
-#secondcon-text {
-  width: 267px;
-  height: 64px;
-  top: 904px;
-  left: 100px;
-  font-family: BPG Nino Mtavruli;
-  font-weight: 700px;
-  font-style: Bold;
-  font-size: 28px;
-  line-height: 100%;
-  color: #00ab89;
-}
-.telagri {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-#telagri-png {
-  width: 388px;
-  height: 382px;
-}
-.telegri-text {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-#second-text {
-  width: 383px;
-  height: 161px;
-  font-family: BPG Ingiri Arial;
+.telagri div p {
+  font-family: "BPG Ingiri Arial", sans-serif;
   font-weight: 400;
-  font-style: Regular;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #8e8e9f;
 }
+.telagri div button {
+  width: 194px;
+  height: 48px;
+  border: none;
+  border-radius: 35px;
+  padding: 10px 50px;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #00ab89;
+}
+
+@media (max-width: 440px) {
+  main.wrapper {
+    max-width: 480px;
+    width: 100%;
+    padding: 20px 16px;
+  }
+  br {
+    display: none;
+  }
+  .container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    order: 1;
+  }
+  .container-one .header {
+    align-items: center;
+  }
+  .container-one .header img {
+    width: 170px;
+    height: auto;
+    margin: 0 auto 24px;
+  }
+  .container-one .header h1 {
+    max-width: 100%;
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .container-one .header p {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  .container-one .header button {
+    width: 100%;
+    max-width: 210px;
+    height: 44px;
+    font-size: 14px;
+    align-self: flex-start;
+  }
+  .container-one .sign_up {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tagline image" "signup  image";
+    align-items: center;
+    gap: 14px 12px;
+  }
+  .container-one .sign_up img {
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    justify-self: end;
+  }
+  .container-one .sign_up button {
+    grid-area: signup;
+    width: 100%;
+    max-width: 230px;
+    height: 44px;
+    font-size: 13px;
+    padding: 10px 14px;
+    justify-self: start;
+  }
+  hr {
+    order: 3;
+    border: none;
+    border-top: 1px solid #b8b9bb;
+    margin: 18px 0;
+  }
+  .container-two {
+    display: contents;
+  }
+  .container-two .footer {
+    display: contents;
+  }
+  .container-two .footer h2 {
+    order: 2;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.25;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .container-two .telagri {
+    order: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 44px auto;
+    grid-template-areas: "intro      intro" "first-img  contact-btn" "first-img  second-img";
+    gap: 14px 12px;
+    align-items: stretch;
+  }
+  .container-two .telagri > div {
+    grid-area: intro;
+    margin-top: 0;
+    gap: 12px;
+  }
+  .container-two .telagri > div h1 {
+    font-size: 28px;
+    color: #343a40;
+  }
+  .container-two .telagri > div p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .container-two .telagri > div button {
+    grid-area: contact-btn;
+    width: 100%;
+    height: 44px;
+    padding: 10px 16px;
+    background-color: #00ab89;
+    color: #ffffff;
+    font-size: 14px;
+    align-self: center;
+  }
+  .container-two .telagri > img {
+    grid-area: first-img;
+    width: 100%;
+    height: 100%;
+    min-height: 210px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
